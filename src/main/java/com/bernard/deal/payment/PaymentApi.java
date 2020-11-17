@@ -1,10 +1,6 @@
-package com.bernard.deal.controller;
+package com.bernard.deal.payment;
 
 import com.bernard.deal.apiresponse.ApiResponse;
-import com.bernard.deal.domain.Payment;
-import com.bernard.deal.dto.PaymentDto;
-import com.bernard.deal.service.PaymentService;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,18 +9,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.List;
 
 
 @RestController
 @CrossOrigin
 @RequestMapping("/payment")
-public class PaymentController {
+public class PaymentApi {
 
     @Autowired
     private PaymentService paymentService;
-
-    private ModelMapper modelMapper;
 
     @RequestMapping(value = "", method = RequestMethod.POST)
     public ResponseEntity<ApiResponse<Payment>> createPayment(@Valid @RequestBody PaymentDto paymentDto){

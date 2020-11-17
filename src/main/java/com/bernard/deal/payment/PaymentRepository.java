@@ -1,6 +1,6 @@
-package com.bernard.deal.repository;
+package com.bernard.deal.payment;
 
-import com.bernard.deal.domain.Payment;
+import com.bernard.deal.payment.Payment;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

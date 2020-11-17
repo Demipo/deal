@@ -1,12 +1,9 @@
-package com.bernard.deal.service;
+package com.bernard.deal.payment;
 
-import com.bernard.deal.domain.Payment;
-import com.bernard.deal.dto.PaymentDto;
+import com.bernard.deal.payment.Payment;
+import com.bernard.deal.payment.PaymentDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 public interface PaymentService {
     Payment createPayment(PaymentDto paymentDto);

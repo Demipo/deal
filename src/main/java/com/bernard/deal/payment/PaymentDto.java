@@ -1,10 +1,8 @@
-package com.bernard.deal.dto;
+package com.bernard.deal.payment;
 
-import com.bernard.deal.domain.Creditor;
+import com.bernard.deal.creditor.Creditor;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.ZonedDateTime;
 
 @Getter
 @Setter

@@ -1,5 +1,8 @@
-package com.bernard.deal.domain;
+package com.bernard.deal.creditor;
 
+import com.bernard.deal.creditor.AuditModel;
+import com.bernard.deal.payment.InstallmentPeriod;
+import com.bernard.deal.payment.PaymentType;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -10,7 +13,7 @@ import java.time.ZonedDateTime;
 
 @Entity
 @Data
-public class Creditor {
+public class Creditor extends AuditModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
